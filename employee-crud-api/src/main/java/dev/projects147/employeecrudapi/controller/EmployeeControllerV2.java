@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/employee")
-public class EmployeeController {
+@RequestMapping("/api/v2/employee")
+public class EmployeeControllerV2 {
 
     private EmployeeService employeeService;
 
-    public EmployeeController(@Qualifier("employeeServiceImpl") EmployeeService employeeService) {
+    public EmployeeControllerV2(@Qualifier("employeeServiceV2Impl") EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
